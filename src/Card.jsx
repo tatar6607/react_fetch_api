@@ -1,8 +1,8 @@
 import React from "react";
 
-const Card = ({ country, onClick }) => {
+const Card = ({ country, onClick, index }) => {
   const { name, flag, region, capital, population } = country;
-
+  // console.log(onClick);
   return (
     <div>
       <div className="col mb-3">
@@ -11,12 +11,13 @@ const Card = ({ country, onClick }) => {
             src={flag}
             // src="https://via.placeholder.com/340x120/FFB6C1/000000"
             alt="Cover"
-            className="card-img-top"
+            className="card-img-top img-fluid"
           />
           <div className="card-body text-center">
             <img
+              // src={flag}
               src="https://bootdey.com/img/Content/avatar/avatar7.png"
-              style={{ width: "100px", marginTop: "-65px" }}
+              style={{ width: "100px", height: "100px", marginTop: "-65px" }}
               alt="User"
               className="img-fluid img-thumbnail rounded-circle border-0 mb-3"
             />
@@ -27,14 +28,18 @@ const Card = ({ country, onClick }) => {
             <p className="text-muted font-size-sm"> Nufus : {population} </p>
           </div>
           <div className="card-footer d-flex justify-content-between">
-            <button className="btn bg-primary has-icon btn-block" type="button">
+            <button
+              className="btn bg-primary"
+              type="button"
+              onClick={onClick.kaydetFun}
+            >
               Takip et!
             </button>
 
             <button
-              class="btn btn-danger has-icon btn-block"
+              className="btn btn-danger btn-block"
               type="button"
-              onClick={onClick}
+              onClick={onClick.silFun}
             >
               Sil!
             </button>
