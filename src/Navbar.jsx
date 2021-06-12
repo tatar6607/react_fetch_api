@@ -23,7 +23,7 @@ const Navbar = ({ takipEdilen }) => {
   return (
     <div className="px-3 py-2 bg-dark text-white mb-0">
       <div className="container">
-        <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div className="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start">
           <a
             href="/"
             className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
@@ -32,11 +32,10 @@ const Navbar = ({ takipEdilen }) => {
             <span className="h4 ms-2"> Dunya Kupasi </span>
           </a>
 
-          <ul className="nav col-6  col-lg-auto justify-content-end my-md-0 text-small">
+          <ul className="nav col-3 col-lg-auto justify-content-end my-md-0 text-small">
             <li>
               <a href="/" className="nav-link text-white">
                 <FontAwesomeIcon icon={faUserAlt} className="h1" />
-                {/* {badge} */}
                 {takipEdilen !== 0 && badge}
               </a>
             </li>
