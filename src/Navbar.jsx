@@ -21,7 +21,7 @@ const Navbar = ({ takipEdilen }) => {
   let badge = <div style={style}>{takipEdilen}</div>;
 
   return (
-    <div className="px-3 py-2 bg-dark text-white mb-4">
+    <div className="px-3 py-2 bg-dark text-white mb-0">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a
@@ -35,7 +35,7 @@ const Navbar = ({ takipEdilen }) => {
           <ul className="nav col-6  col-lg-auto justify-content-end my-md-0 text-small">
             <li>
               <a href="/" className="nav-link text-white">
-                <FontAwesomeIcon icon={faUserAlt} className="display-5" />
+                <FontAwesomeIcon icon={faUserAlt} className="h1" />
                 {/* {badge} */}
                 {takipEdilen !== 0 && badge}
               </a>

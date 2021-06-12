@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Aciklama from "./Aciklama";
 import Card from "./Card";
 import Navbar from "./Navbar";
 
@@ -31,6 +32,7 @@ function FetchApi() {
   return (
     <>
       <Navbar key="123" takipEdilen={takip.length} />
+      <Aciklama />
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 gutters-sm">
         {ulkeler.map((ulke, i) => {
           return (

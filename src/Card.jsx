@@ -4,7 +4,7 @@ const Card = ({ country, onClick, index }) => {
   const { name, flag, region, capital, population } = country;
   // console.log(onClick);
   return (
-    <div>
+    <div className="mt-4">
       <div className="col mb-3">
         <div className="card">
           <img
