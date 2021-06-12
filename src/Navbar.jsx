@@ -32,7 +32,7 @@ const Navbar = ({ takipEdilen }) => {
             <span className="h4 ms-2"> Dunya Kupasi </span>
           </a>
 
-          <ul className="nav col-3 col-lg-auto justify-content-end my-md-0 text-small">
+          <ul className="nav col-3 col-lg-auto my-0 text-small">
             <li>
               <a href="/" className="nav-link text-white">
                 <FontAwesomeIcon icon={faUserAlt} className="h1" />
