@@ -5,16 +5,16 @@ import { faGlobeAmericas, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 const Navbar = ({ takipEdilen }) => {
   const style = {
     position: "relative",
-    top: "-30px",
+    top: "-35px",
     left: "-10px",
     borderRadius: "50%",
-    width: "25px",
-    height: "25px",
+    width: "21px",
+    height: "21px",
     padding: "3px",
     background: "red",
     color: "white",
     textAlign: "center",
-    font: "18px Arial, sans-serif",
+    font: "13px Arial, sans-serif",
     display: "inline-block",
   };
 
@@ -29,7 +29,7 @@ const Navbar = ({ takipEdilen }) => {
             className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
           >
             <FontAwesomeIcon icon={faGlobeAmericas} className="h1" />
-            <span className="h3 ms-2"> Dunya Kupasi </span>
+            <span className="h4 ms-2"> Dunya Kupasi </span>
           </a>
 
           <ul className="nav col-6  col-lg-auto justify-content-end my-md-0 text-small">
